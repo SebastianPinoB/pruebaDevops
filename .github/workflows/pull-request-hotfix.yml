@@ -1,0 +1,14 @@
+name: pr-hotfix
+
+on:
+  pull_request:
+    branches: ["hotfix"]
+
+jobs:
+  pruebaDevops:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: "Pull request a la rama hotfix"
+        run: echo "Se ha generado un pull-request en la rama hotfix"
