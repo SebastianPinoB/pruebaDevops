@@ -1,4 +1,4 @@
-name: BDGET
+name: Pull-request-main
 
 on:
   pull_request:
