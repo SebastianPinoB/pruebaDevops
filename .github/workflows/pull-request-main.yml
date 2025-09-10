@@ -1,0 +1,14 @@
+name: BDGET
+
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  pruebaDevops:
+  
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: "Pull request a la rama main"
+        run: echo "Se ha generado un pull-request en la rama main"
