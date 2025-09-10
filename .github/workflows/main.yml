@@ -1,0 +1,16 @@
+
+name: cambios en feature
+
+on:
+  push:
+    branches: ["feature"]
+
+jobs:
+  PruebaDevops:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Mensaje cambio feature
+        run: echo "Se ha generado un cambio en feature"
