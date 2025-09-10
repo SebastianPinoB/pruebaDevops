@@ -1,0 +1,15 @@
+name: push a develop
+
+on:
+  push:
+    branches: ["develop"]
+
+jobs:
+  PruebaDevops:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Mensaje push
+        run: echo "Se ha generado un push a la rama develop"
